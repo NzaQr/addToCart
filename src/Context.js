@@ -33,7 +33,9 @@ function ContextProvider({ children }) {
   function removeFromCart(id) {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   }
-
+  function emptyCart() {
+    setCartItems([]);
+  }
   return (
     <Context.Provider
       value={{
@@ -41,7 +43,8 @@ function ContextProvider({ children }) {
         toggleFavorite,
         addToCart,
         cartItems,
-        removeFromCart
+        removeFromCart,
+        emptyCart
       }}
     >
       {children}
