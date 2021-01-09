@@ -1,2 +1,2 @@
 # addToCart-project
-Created with CodeSandbox
+Add images to a cart and proceed to checkout.
